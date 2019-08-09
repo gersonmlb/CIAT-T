@@ -1,0 +1,51 @@
+
+<div class="row">
+  <div class="col-sm-12">
+    <app-card cardTitle="REGISTRO" [options]="false">
+      <h5>REGISTRO</h5>
+      <hr>
+      <div class="row">
+        <div class="col-md-6">
+          <form action="javascript:" name="b">
+            <div class="form-group">
+                <img src="assets/images/user/face_recognition.png" id="face" name="face">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Usuario</label>
+              <input type="text" class="form-control" name="user" placeholder="Usuario" [(ngModel)]="dni">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" name="user" placeholder="Password" [(ngModel)]="dni">
+            </div>
+            
+          </form>
+        </div>
+        <div class="col-md-6">
+          <form action="javascript:" name="a">
+            <div class="form-group">
+              <label>Nombres</label>
+              <input type="text" class="form-control" placeholder="Nombres">
+              <br/>
+              <label>Apellidos</label>
+              <input type="text" class="form-control" placeholder="Apellidos">
+              <br/>
+              <label for="exampleInputPassword1">DNI</label>
+              <input type="number" class="form-control" name="user" placeholder="DNI" [(ngModel)]="dni">
+              <br/>
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie más.</small>
+              <br/>
+              <label>Codigo</label>
+              <input type="number" class="form-control" placeholder="Codigo">
+              <br/>
+              <label>Celular</label>
+              <input type="number" class="form-control" placeholder="Celular">
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Registrar</button>
+    </app-card>
+  </div>
+</div>
